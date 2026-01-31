@@ -1,0 +1,114 @@
+卷 E 的文件夹 PATH 列表
+卷序列号为 7704-C0A6
+E:.
+│  air.toml
+│  go.mod
+│  go.sum
+│  main.go
+│  project_tree.txt
+│  
+├─.idea
+│  │  .gitignore
+│  │  bookstore.iml
+│  │  modules.xml
+│  │  workspace.xml
+│  │  
+│  └─inspectionProfiles
+│          Project_Default.xml
+│          
+├─common
+│      common.go
+│      
+├─config
+│      alipay.go
+│      config.go
+│      config.yaml
+│      db.go
+│      redis.go
+│      snowflake.go
+│      
+├─controller
+│  ├─admin
+│  │      auth_admin.go
+│  │      book_admin.go
+│  │      category_admin.go
+│  │      dashboard_admin.go
+│  │      order_admin.go
+│  │      user_admin.go
+│  │      
+│  └─frontend
+│          alipay_notify.go
+│          alipay_return.go
+│          book_front.go
+│          cart_front.go
+│          category_front.go
+│          common_front.go
+│          order_front.go
+│          pay_alipay.go
+│          user_front.go
+│          
+├─cron
+│      stock_job.go
+│      
+├─dao
+│      admindao.go
+│      bookdao.go
+│      cartdao.go
+│      cartItemdao.go
+│      categorydao.go
+│      orderdao.go
+│      orderItemdao.go
+│      paymentdao.go
+│      redisdao.go
+│      redisStock.go
+│      userdao.go
+│      verifydao.go
+│      
+├─frontend
+├─model
+│      address.go
+│      admin.go
+│      book.go
+│      cart.go
+│      cartItem.go
+│      category.go
+│      favorite.go
+│      json.go
+│      order.go
+│      orderItem.go
+│      page.go
+│      payment.go
+│      review.go
+│      session.go
+│      user.go
+│      
+├─router
+│      middleware.go
+│      router.go
+│      
+├─service
+│      password_service.go
+│      payment_service.go
+│      stock_sync_service.go
+│      
+├─test
+│      jwt_test.go
+│      mysql_test.go
+│      redis_test.go
+│      utils_test.go
+│      
+├─tmp
+│      build-errors.log
+│      main.exe
+│      
+└─utils
+        context.go
+        email.go
+        hash.go
+        jwt.go
+        logger.go
+        response.go
+        snowflake.go
+        uuid.go
+        verify.go
+        

@@ -1,0 +1,22 @@
+# 项目根目录
+root = "."
+
+# Air 运行时存放编译后的可执行文件
+tmp_dir = "tmp"
+
+[build]
+# Windows 下必须生成 .exe，否则无法运行
+cmd = "go build -o ./tmp/bookstore.exe ."
+# Air 运行这个文件作为服务
+bin = "./tmp/bookstore.exe"
+
+# 只监控 go 文件
+include_ext = ["go"]
+# 不监控以下目录（避免频繁重启）
+exclude_dir = ["tmp", "vendor", "test"]
+
+# 代码变化后延迟 100ms 防止重复编译
+delay = 100
+
+[log]
+time = true
